@@ -33,9 +33,9 @@
     
     <!-- White circle with black border in the second column, third row -->
     <circle cx="110" cy="100" r="10" fill="black" stroke="white" stroke-width="2">
-      <animate attributeName="cx" from="20" to="110" dur="1s" begin="1s" repeatCount="1" />
-      <animate attributeName="cy" from="20" to="100" dur="1s" begin="1s" repeatCount="1" />
-      <animate attributeName="visibility" from="hidden" to="visible" dur="2s" fill="freeze" />
+      <animate attributeName="cx" from="50" to="110" dur="1s" begin="2s" repeatCount="1" />
+      <animate attributeName="cy" from="100" to="100" dur="1s" begin="2s" repeatCount="1" />
+      <animate attributeName="visibility" from="hidden" to="visible" dur="4s" fill="freeze" />
     </circle>
     
     <!-- Third pattern set -->
@@ -56,8 +56,8 @@
     
     <!-- White circle with black border in the second column, third row -->
     <circle cx="170" cy="100" r="10" fill="black" stroke="white" stroke-width="2" visibility="hidden">
-      <animate attributeName="cx" from="140" to="170" dur="1s" begin="2s" repeatCount="1" />
-      <animate attributeName="cy" from="80" to="100" dur="1s" begin="2s" repeatCount="1" />
-      <animate attributeName="visibility" from="hidden" to="visible" dur="4s" fill="freeze" />
+      <animate attributeName="cx" from="110" to="170" dur="1s" begin="3s" repeatCount="1" />
+      <animate attributeName="cy" from="100" to="100" dur="1s" begin="3s" repeatCount="1" />
+      <animate attributeName="visibility" from="hidden" to="visible" dur="6s" fill="freeze" />
     </circle>
   </svg>
