@@ -31,9 +31,16 @@
             background-color: black;
             color: gray;
         }
+        #slogan{
+            text-transform: uppercase;
+        }
         section {
             margin: auto;
             width: 90%;
+        }
+        ::selection {
+            color: black;
+            background: white;
         }
         @media (min-width: 768px) {
             section {
@@ -106,6 +113,11 @@
         article p a {
             color: white;
         }
+        bullet {
+            display: block;
+            padding: 10px 0px;
+            font-size: 1.5rem;
+        }
     </style>
     </head>
 
@@ -115,31 +127,10 @@
 <header>
     <div><img src="42logo.svg" alt="42 SPACES logo" /></div>
     <heading class="head1" id="typing-text"></heading>
-    <p>Back to the basics</p>
+    <p id="slogan">Back to the basics</p>
 </header>
 
 <section id="docs">
-  <!-- <nav>
-    <small-details>
-      <details>
-        <summary></summary>
-        <ul><li>
-            <a href="#who-are-we">Who are we?</a>
-          </li><li>
-            <a href="#clarity">Clarity</a>
-          </li><li>
-            <a href="#speed">Speed</a>
-          </li><li>
-            <a href="#elegance">Elegance</a>
-          </li><li>
-            <a href="#batteries-included">Batteries Included</a>
-          </li><li>
-            <a href="#radical-transparency">Radical Transparency</a>
-          </li>
-        </ul>
-      </details>
-    </small-details>
-  </nav> -->
   <article class="hidden">
     <heading class="head2" id="who-are-we">Who are we?</heading>
     <p class="hide-paragraph">We are a company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</p>
@@ -161,11 +152,13 @@
         <p class="hide-paragraph">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</p>
     </article>
     <article class="hidden">
-        <heading class="head2" id="radical-transparency">Radical Transparency</heading>
+        <heading class="head2" id="radical-transparency">Transparency</heading>
         <p class="hide-paragraph">
-            If we have a system that we can reuse, we will. No charge.
-            If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.
-            If you're working with us, know that everyone with your role makes the same money as you. No exceptions.
+            We believe in radical transparency, simply because it's easier.<br/>
+            <bullet>If we have a system that we can reuse, we will. No charge.</bullet>
+            <bullet>If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.</bullet>
+            <bullet>If you're working for us, know that everyone with your role makes the same money as you. No exceptions.</bullet>
+            
         </p>
     </article>
     <article class="hidden">
