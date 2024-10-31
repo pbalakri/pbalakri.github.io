@@ -2,222 +2,215 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+    <head>
     
-    <meta charset="utf-8">
-    <title>42 SPACES</title>
-    <meta name="description" content="We de-mystify the world of technology and design, empowering you to make informed decisions about your digital future.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="/">
-    <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.png">
-    <link rel="mask-icon" href="/assets/images/icons/favicon.svg" color="#000000">
-    <link rel="apple-touch-icon" href="/assets/images/icons/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        .typing {
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        .typing::after {
-            content: '|';
-            display: inline-block;
-            margin: 0 2px;
-            animation: blink 0.7s steps(1) infinite;
-        }
-        body {
-            font-family: 'Poppins', serif;
-            background-color: black;
-            color: gray;
-        }
-        #slogan{
-            text-transform: uppercase;
-        }
-        section {
-            margin: auto;
-            width: 90%;
-        }
-        ::selection {
-            color: black;
-            background: white;
-        }
-        @media (min-width: 768px) {
+        <meta charset="utf-8">
+        <title>42 SPACES</title>
+        <meta name="description" content="We de-mystify the world of technology and design, empowering you to make informed decisions about your digital future.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="/">
+        <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="icon" type="image/svg+xml" href="favicon.png">
+        <link rel="mask-icon" href="/assets/images/icons/favicon.svg" color="#000000">
+        <link rel="apple-touch-icon" href="/assets/images/icons/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            .typing {
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .typing::after {
+                content: '|';
+                display: inline-block;
+                margin: 0 2px;
+                animation: blink 0.7s steps(1) infinite;
+            }
+            body {
+                font-family: 'Poppins', serif;
+                background-color: black;
+                color: gray;
+            }
+            #slogan{
+                text-transform: uppercase;
+            }
             section {
-                width: 50%; /* For desktop */
+                margin: auto;
+                width: 90%;
             }
-        }
-        .head1 {
-            font-weight: 600;
-            font-style: normal;
-            font-size: 4rem;
-            text-transform: uppercase;
-            color: white;
-            width: 100%;
-        }
-        .head2 {
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-        .head2:hover {
-            color: white;
-        }
-        header {
-            display: flex;
-            flex-direction: column;
-        }
-        ul {
-            list-style-type: none
-        }
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
+            ::selection {
+                color: black;
+                background: white;
             }
-            50% {
+            @media (min-width: 768px) {
+                section {
+                    width: 50%; /* For desktop */
+                }
+            }
+            .head1 {
+                font-weight: 600;
+                font-style: normal;
+                font-size: 4rem;
+                text-transform: uppercase;
+                color: white;
+                width: 100%;
+            }
+            .head2 {
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            .head2:hover {
+                color: white;
+            }
+            header {
+                display: flex;
+                flex-direction: column;
+            }
+            ul {
+                list-style-type: none
+            }
+            @keyframes blink {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+            .hidden {
                 opacity: 0;
             }
-        }
-        .hidden {
-            opacity: 0;
-        }
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
+            .fade-in {
+                opacity: 0;
+                animation: fadeIn 1s forwards;
             }
-        }
-        .article-hover {
-            color: white;
-            transition: color 1s ease;
-        }
 
-        .article-not-hover {
-            color: gray;
-            transition: color 1s ease;
-        }
-        
-        .hide-paragraph {
-            display: none;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-        article p {
-            padding-left: 20px;
-            font-size: 1.5rem;
-            font-weight: 100;
-            font-style: normal;
-        }
-        article p a {
-            color: white;
-        }
-        bullet {
-            display: block;
-            padding: 10px 0px;
-            font-size: 1.5rem;
-        }
-    </style>
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+            .article-hover {
+                color: white;
+                transition: color 1s ease;
+            }
+
+            .article-not-hover {
+                color: gray;
+                transition: color 1s ease;
+            }
+            
+            .hide-paragraph {
+                display: none;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+            }
+            article p {
+                padding-left: 20px;
+                font-size: 1.5rem;
+                font-weight: 100;
+                font-style: normal;
+            }
+            article p a {
+                color: white;
+            }
+            bullet {
+                display: block;
+                padding: 10px 0px;
+                font-size: 1.5rem;
+            }
+        </style>
     </head>
-
   <body>
-      
-<main>
-<header>
-    <div><img src="42logo.svg" alt="42 SPACES logo" /></div>
-    <heading class="head1" id="typing-text"></heading>
-    <p id="slogan">Back to the basics</p>
-</header>
+    <main>
+    <header>
+        <div><img src="42logo.svg" alt="42 SPACES logo" /></div>
+        <heading class="head1" id="typing-text"></heading>
+        <p id="slogan">Back to the basics</p>
+    </header>
+    <section id="docs">
+        <article class="fade-in">
+        <heading class="head2" id="who-are-we">Who are we?</heading>
+        <p class="hide-paragraph">We are a company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="clarity">Clarity</heading>
+            <p class="hide-paragraph">We are aware that a problem stated in words does not paint the whole picture. We understand the problem from multiple perspectives to fully understand the dimensionality of the problem. Then and only then, do we start designing a solution.</p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="speed">Speed</heading>
+            <p class="hide-paragraph">We recognize that in this world of ridiculously fast electric cars and 10 minute delivery, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="elegance">Elegance</heading>
+            <p class="hide-paragraph">Our solutions are elegant - even the hacks that we do. Elegance in our opinion is a balance of speed, longevity of the solution, and how proud we feel in its aftermath.</p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="batteries-included">Batteries Included</heading>
+            <p class="hide-paragraph">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="radical-transparency">Transparency</heading>
+            <p class="hide-paragraph">
+                We believe in radical transparency, simply because it's easier.<br/>
+                <bullet>If we have a system that we can reuse, we will. No charge.</bullet>
+                <bullet>If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.</bullet>
+                <bullet>If you're working for us, know that everyone with your role makes the same money as you. No exceptions.</bullet>
+                
+            </p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="radical-transparency">Founders</heading>
+            <p class="hide-paragraph">
+                The company was founded by Anthony and Prashanth in 2024. Just two childhood friends who wanted to work together. That's it. No major origin story there.
+            </p>
+        </article>
+        <article class="fade-in">
+            <heading class="head2" id="radical-transparency">Interested?</heading>
+            <p class="hide-paragraph">
+                <a href="mailto:hello@42spaces.in"> hello@42spaces.in</a>
+            </p>
+        </article>
+        
+    </section>
+    <footer >
+    <p>&copy; 42 SPACES 2024</p>
+    </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = "42 SPACES";
+            let index = 0;
+            const typingElement = document.getElementById("typing-text");
 
-<section id="docs">
-  <article class="hidden">
-    <heading class="head2" id="who-are-we">Who are we?</heading>
-    <p class="hide-paragraph">We are a company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="clarity">Clarity</heading>
-        <p class="hide-paragraph">We are aware that a problem stated in words does not paint the whole picture. We understand the problem from multiple perspectives to fully understand the dimensionality of the problem. Then and only then, do we start designing a solution.</p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="speed">Speed</heading>
-        <p class="hide-paragraph">We recognize that in this world of ridiculously fast electric cars and 10 minute delivery, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="elegance">Elegance</heading>
-        <p class="hide-paragraph">Our solutions are elegant - even the hacks that we do. Elegance in our opinion is a balance of speed, longevity of the solution, and how proud we feel in its aftermath.</p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="batteries-included">Batteries Included</heading>
-        <p class="hide-paragraph">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="radical-transparency">Transparency</heading>
-        <p class="hide-paragraph">
-            We believe in radical transparency, simply because it's easier.<br/>
-            <bullet>If we have a system that we can reuse, we will. No charge.</bullet>
-            <bullet>If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.</bullet>
-            <bullet>If you're working for us, know that everyone with your role makes the same money as you. No exceptions.</bullet>
-            
-        </p>
-    </article>
-    <article class="hidden">
-        <heading class="head2" id="radical-transparency">Interested?</heading>
-        <p class="hide-paragraph">
-            <a href="mailto:hello@42spaces.in"> hello@42spaces.in</a>
-        </p>
-    </article>
-</section>
-<footer >
-  <p>&copy; 42 SPACES 2024</p>
-</footer>
-</main>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const text = "42 SPACES";
-        let index = 0;
-        const typingElement = document.getElementById("typing-text");
+            function type() {
+                if (index < text.length) {
+                    typingElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 300); // Adjust typing speed here
+                } 
+            }
+            typingElement.classList.add('typing');
+            type();
+            const articles = document.querySelectorAll('article');
+            let articleIndex = 0;
+            articles.forEach(article => {
+                article.addEventListener('click', () => {
+                    articles.forEach(a => {
+                        a.classList.add('article-not-hover');
+                        const paragraphs = a.querySelectorAll('p');
+                        paragraphs.forEach(p => p.classList.add('hide-paragraph'));
+                    });
+                    article.classList.remove('article-not-hover');
+                    article.classList.add('article-hover');
+                    const paragraphs = article.querySelector('p');
+                    paragraphs.classList.remove('hide-paragraph');
+                });
 
-        function type() {
-            if (index < text.length) {
-                typingElement.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(type, 300); // Adjust typing speed here
-            } 
-        }
-        typingElement.classList.add('typing');
-        type();
-        const articles = document.querySelectorAll('article');
-        let articleIndex = 0;
-        function fadeInArticle() {
             
-                articles.forEach((article) => {
-                    article.classList.add('fade-in');
-                    article.classList.remove('hidden');
-                });
-                setTimeout(fadeInArticle, 1000); // Adjust delay here to control the time between articles
-            
-        }
-        fadeInArticle();
-        articles.forEach(article => {
-            article.addEventListener('click', () => {
-                articles.forEach(a => {
-                    a.classList.add('article-not-hover');
-                    const paragraphs = a.querySelectorAll('p');
-                    paragraphs.forEach(p => p.classList.add('hide-paragraph'));
-                });
-                article.classList.remove('article-not-hover');
-                article.classList.add('article-hover');
-                const paragraphs = article.querySelector('p');
-                paragraphs.classList.remove('hide-paragraph');
             });
-
-           
         });
-    });
-</script>
+    </script>
   </body>
-
 </html>
