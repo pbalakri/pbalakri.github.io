@@ -41,7 +41,9 @@
             }
         }
         .head1 {
-            font-family: "Poppins-SemiBold";
+            font-family: "Poppins", serif;
+            font-weight: 600;
+            font-style: normal;
             font-size: 4rem;
             text-transform: uppercase;
             color: white;
@@ -51,6 +53,9 @@
             font-family: "Poppins";
             font-size: 2rem;
             text-transform: uppercase;
+        }
+        .head2:hover {
+            color: white;
         }
         header {
             display: flex;
@@ -96,6 +101,10 @@
         }
         article p {
             padding-left: 20px;
+            font-size: 1.5rem;
+            font-family: "Poppins", serif;
+            font-weight: 100;
+            font-style: normal;
         }
     </style>
     </head>
@@ -103,9 +112,6 @@
   <body>
       
 <main>
-
-
-  
 <header>
     <div><img src="42logo.svg" alt="42 SPACES logo" /></div>
     <heading class="head1" id="typing-text"></heading>
@@ -113,7 +119,7 @@
 </header>
 
 <section id="docs">
-  <nav>
+  <!-- <nav>
     <small-details>
       <details>
         <summary></summary>
@@ -133,48 +139,40 @@
         </ul>
       </details>
     </small-details>
-  </nav>
-  
+  </nav> -->
   <article class="hidden">
     <heading class="head2" id="who-are-we">Who are we?</heading>
     <p class="hide-paragraph">We are a company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</p>
-</article>
-<article class="hidden">
-    <heading class="head2" id="clarity">Clarity</heading>
-    <p class="hide-paragraph">We are aware that a problem stated in words does not paint the whole picture. We understand the problem from multiple perspectives to fully understand the dimensionality of the problem. Then and only then, do we start designing a solution.</p>
-</article>
-<article class="hidden">
-    <heading class="head2" id="speed">Speed</heading>
-    <p class="hide-paragraph">We recognize that in this world of ridiculously fast electric cars and 10 minute delivery, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</p>
-</article>
-<article class="hidden">
-    <heading class="head2" id="elegance">Elegance</heading>
-    <p class="hide-paragraph">Our solutions are elegant - even the hacks that we do. Elegance in our opinion is a balance of speed, longevity of the solution, and how proud we feel in its aftermath.</p>
-</article>
-<article class="hidden">
-    <heading class="head2" id="batteries-included">Batteries Included</heading>
-    <p class="hide-paragraph">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</p>
-</article>
-<article class="hidden">
-    <heading class="head2" id="radical-transparency">Radical Transparency</heading>
-    <p class="hide-paragraph">
-        If we have a system that we can reuse, we will. No charge.
-        If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.
-        If you're working with us, know that everyone with your role makes the same money as you. No exceptions.
-    </p>
-
-</article>
-  
+    </article>
+    <article class="hidden">
+        <heading class="head2" id="clarity">Clarity</heading>
+        <p class="hide-paragraph">We are aware that a problem stated in words does not paint the whole picture. We understand the problem from multiple perspectives to fully understand the dimensionality of the problem. Then and only then, do we start designing a solution.</p>
+    </article>
+    <article class="hidden">
+        <heading class="head2" id="speed">Speed</heading>
+        <p class="hide-paragraph">We recognize that in this world of ridiculously fast electric cars and 10 minute delivery, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</p>
+    </article>
+    <article class="hidden">
+        <heading class="head2" id="elegance">Elegance</heading>
+        <p class="hide-paragraph">Our solutions are elegant - even the hacks that we do. Elegance in our opinion is a balance of speed, longevity of the solution, and how proud we feel in its aftermath.</p>
+    </article>
+    <article class="hidden">
+        <heading class="head2" id="batteries-included">Batteries Included</heading>
+        <p class="hide-paragraph">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</p>
+    </article>
+    <article class="hidden">
+        <heading class="head2" id="radical-transparency">Radical Transparency</heading>
+        <p class="hide-paragraph">
+            If we have a system that we can reuse, we will. No charge.
+            If our team is unable to deliver on time, we will let you know the exact reasons why. No yelling at the team, No discounts. Engineering takes time and estimation is hard.
+            If you're working with us, know that everyone with your role makes the same money as you. No exceptions.
+        </p>
+    </article>
 </section>
-
 <footer >
-  <p class="size-sm weight-400">&copy; 42 SPACES 2024</p>
+  <p>&copy; 42 SPACES 2024</p>
 </footer>
-
-
 </main>
-
-
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const text = "42 SPACES";
