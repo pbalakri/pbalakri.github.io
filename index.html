@@ -44,58 +44,36 @@
                 .image-container {
                     width: 50%;
                 }
-                
             }
-            .head2 {
+            
+            .heading {
                 font-size: 2rem;
+                font-weight: 400;
                 text-transform: uppercase;
             }
-            .head2:hover {
+            .heading:hover {
                 color: white;
             }
-            
-            ul {
-                list-style-type: none;
-                font-size: 1rem;
-                padding: 10px;
-            }
-            
-            .hidden {
-                opacity: 0;
-            }
-            .fade-in {
-                opacity: 0;
-                animation: fadeIn 1s forwards;
-            }
-            @keyframes fadeIn {
-                to {
-                    opacity: 1;
-                }
-            }
-            
-            .article-hover {
+            .active {
                 color: white;
                 height: 100%;
-                
                 transition: color 3s ease;
             }
-            .article-not-hover {
+            .inactive {
                 color: gray;
                 transition: color 3s ease;
             }
             .hide-section {
                 display: none;
-                transition: opacity 2s ease;
             }
-            
-            article section {
+            section {
                 position: relative;
                 padding: 50px 20px;
                 font-size: 1.5rem;
                 font-weight: 100;
                 font-style: normal;
             }
-            article section::before {
+            section::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -105,12 +83,13 @@
                 background-color: gray;
                 animation: grow 2s forwards; /* Animate the height */
             }
+            
             @keyframes grow {
                 to {
                     height: 50%;
                 }
             }
-            article section a {
+            section a {
                 color: white;
             }
             bullet {
@@ -125,28 +104,28 @@
         <div class="image-container"><img width="30%" src="42logo.svg" alt="42 SPACES logo" /></div>
     </header>
     <content id="docs">
-        <article class="fade-in article-hover">
-        <heading class="head2" id="who-are-we">Who are we?</heading>
+        <article class="fade-in active">
+        <heading class="heading" id="who-are-we">Who are we?</heading>
         <section>We are a Digital Problem Solving company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="clarity">Clarity</heading>
+            <heading class="heading" id="clarity">Clarity</heading>
             <section class="hide-section">We are aware that a problem stated in words does not paint the whole picture. We approach the problem statement from multiple perspectives to fully understand the dimensionality of the problem. Then and only then, do we start designing a solution.</section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="speed">Speed</heading>
-            <section class="hide-section">We recognize that in this world of ridiculously fast electric cars and 10 minute delivery, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</section>
+            <heading class="heading" id="speed">Speed</heading>
+            <section class="hide-section">We recognize that in this world of ridiculously fast electric cars and 10-minute deliveries, the time between an idea to its implementation should tend towards 0. This is also what makes our work exciting.</section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="elegance">Elegance</heading>
+            <heading class="heading" id="elegance">Elegance</heading>
             <section class="hide-section">Our solutions are elegant - even the hacks that we do. Elegance in our opinion is a balance of speed, longevity of the solution, and how proud we feel in its aftermath.</section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="batteries-included">Batteries Included</heading>
+            <heading class="heading" id="batteries-included">Batteries Included</heading>
             <section class="hide-section">We are not JUST a delivery partner. We are not JUST a strategy partner. We’re part of YOUR team and you are part of OURS. What that means is that we are invested in that powerpoint idea of yours as much as you are and we will do everything to get that idea to see the light of the day. We will pivot thousands of times and dive into hiring, marketing, design, data, and political strategy to do whatever it takes to succeed.</section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="radical-transparency">Transparency</heading>
+            <heading class="heading" id="radical-transparency">Transparency</heading>
             <section class="hide-section">
                 We believe in radical transparency, simply because it's easier.<br/>
                 <bullet>If we have a system that we can reuse, we will. No charge.</bullet>
@@ -156,13 +135,13 @@
             </section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="founders">Founders</heading>
+            <heading class="heading" id="founders">Founders</heading>
             <section class="hide-section">
                 The company was founded by Marshal and Prashanth in 2024. Just two childhood friends who wanted to work together. That's it. No major origin story there.
             </section>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="jobs">Jobs</heading>
+            <heading class="heading" id="jobs">Jobs</heading>
             <section class="hide-section">
                 Web Engineer - 1<br/>
                     <bullet>Passionate about web experiences</bullet>
@@ -185,7 +164,7 @@
             </p>
         </article>
         <article class="fade-in">
-            <heading class="head2" id="interested">Interested?</heading>
+            <heading class="heading" id="interested">Interested?</heading>
             <section class="hide-section">
                 <a href="mailto:hello@42spaces.in"> hello@42spaces.in</a>
             </section>
@@ -203,15 +182,17 @@
                 const article = document.querySelector(`article heading[id="${id}"]`).parentElement;
                 if (article) {
                     articles.forEach(a => {
-                        a.classList.add('article-not-hover');
+                        a.classList.add('inactive');
                         const paragraphs = a.querySelectorAll('section');
                         paragraphs.forEach(p => p.classList.add('hide-section'));
                     });
-                    article.classList.remove('article-not-hover');
-                    article.classList.add('article-hover');
+                    article.classList.remove('inactive');
+                    article.classList.add('active');
                     const paragraphs = article.querySelector('section');
                     paragraphs.classList.remove('hide-section');
                 }
+                document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+
             }
         
             if (window.location.hash) {
