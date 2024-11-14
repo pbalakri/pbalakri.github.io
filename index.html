@@ -115,8 +115,7 @@
             }
             bullet {
                 display: block;
-                padding: 5px 10px;
-                font-size: 1rem;
+                padding: 20px;
             }
         </style>
     </head>
@@ -126,7 +125,7 @@
         <div class="image-container"><img width="30%" src="42logo.svg" alt="42 SPACES logo" /></div>
     </header>
     <content id="docs">
-        <article class="fade-in">
+        <article class="fade-in article-hover">
         <heading class="head2" id="who-are-we">Who are we?</heading>
         <section>We are a Digital Problem Solving company that focuses on the basics of everything we do - including how we make money, how we approach problems, how we communicate solutions, how we hire, how we pay, etc.</section>
         </article>
@@ -215,7 +214,6 @@
                 }
             }
         
-            // Check if there's a hash in the URL and open the corresponding section
             if (window.location.hash) {
                 const id = window.location.hash.substring(1); // Remove the '#' from the hash
                 openSectionById(id);
@@ -227,11 +225,8 @@
                     if (id) {
                         window.location.hash = id;
                         openSectionById(id);
-                    }
-                    
+                    } 
                 });
-
-            
             });
         });
     </script>
